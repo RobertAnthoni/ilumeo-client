@@ -24,6 +24,6 @@ https://www.figma.com/design/lVqW4UGfh9vxbY5Ig5YLCz/Ilumeo-Point?node-id=0-1&t=a
 
 Rodar o seguinte comando:
 
-    1 - docker compose up -d
+    $ docker compose up -d
 
 Após isso acessar localhost:5173
