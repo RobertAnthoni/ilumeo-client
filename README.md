@@ -1,50 +1,29 @@
-# React + TypeScript + Vite
+# Ilumeo Point
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sistema desenvolvido para case técnico para vaga de Jr Full Stack. Foram utilizadas as seguintes stacks para desenvolvimento da parte web:
 
-Currently, two official plugins are available:
+- React.js
+- TypeScript
+- Shadcn/ui
+- Eslint
+- React-routes-dom
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Figma
 
-## Expanding the ESLint configuration
+Link de Acesso ao Figma:
+https://www.figma.com/design/lVqW4UGfh9vxbY5Ig5YLCz/Ilumeo-Point?node-id=0-1&t=ay3XKkKt3dKnRWMc-1
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Funções
 
-- Configure the top-level `parserOptions` property like this:
+- Criação de novos colaboradores.
+- Registro de marcação de ponto.
+- Visualização de totalização de horas diaria e mensal.
+- Visualização detalhada de pontos.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Deploy
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Rodar o seguinte comando:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+    1 - docker compose up -d
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Após isso acessar localhost:5173
